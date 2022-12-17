@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* background-image: linear-gradient(
+    to right bottom,
+    #410aaf,
+    #3e07ab,
+    #3b05a6,
+    #3802a2,
+    #35009e
+  ); */
+  color: aliceblue;
+  font-size: x-large;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-style: italic;
+}

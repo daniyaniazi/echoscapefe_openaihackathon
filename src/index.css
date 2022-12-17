@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    to right bottom,
+    #410aaf,
+    #2e0e8f,
+    #1e0e6f,
+    #120b50,
+    #0e0033
+  );
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.audio-status {
+  display: flex;
+  justify-content: center;
+}
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.audio-section {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.audio-display {
+  /* margin: auto; */
+}
+video {
+  position: relative;
+  top: -40px;
+}
+.audio-status {
+  background: #ffffff33;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  color: aliceblue;
+  font-size: medium;
+  font-weight: lighter;
+}
+.audio-controls {
+  width: 80%;
+  /* margin: auto; */
+}
+.audio-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.btn {
+  background-color: #fffffffa;
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #503e95;
+  transition: all 0.35s;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+.img-display {
+  width: 80%;
+  height: 400px;
+}
+.img-display img {
+  width: 100%;
+  height: 100%;
+}
+.img-caption {
+  margin: 10px;
+  font-size: larger;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #4c3e8e;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+.loader_con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.loader {
+  border: 16px solid #ffffff;
+  border-top: 16px solid #4e3e92;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
